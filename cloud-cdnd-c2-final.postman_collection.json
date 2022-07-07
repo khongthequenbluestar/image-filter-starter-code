@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "faa14ccc-3c09-4120-b8e9-b26cbe0e4799",
+		"name": "cloud-cdnd-c2-final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3132485"
+	},
+	"item": [
+		{
+			"name": "Filtered image local",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}/filteredimage?image_url=https://www.google.com.vn/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://www.google.com.vn/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtered image online",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ducta11udacityproject2-env.eba-e9t6mipk.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://www.google.com.vn/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+					"protocol": "http",
+					"host": [
+						"ducta11udacityproject2-env",
+						"eba-e9t6mipk",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://www.google.com.vn/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "localhost:8082",
+			"type": "string"
+		}
+	]
+}
